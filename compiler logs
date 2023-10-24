@@ -1,0 +1,91 @@
+In file included from type2.h:3,
+                 from type1.h:2,
+                 from type1.cpp:1:
+type3.h:7:5: error: ‘type1’ does not name a type; did you mean ‘type3’?
+    7 |     type1& var1;
+      |     ^~~~~
+      |     type3
+type3.h:8:5: error: ‘type2’ does not name a type; did you mean ‘type3’?
+    8 |     type2& var2;
+      |     ^~~~~
+      |     type3
+type3.h:11:16: error: expected ‘)’ before ‘&’ token
+   11 |     type3(type1& var1, type2& var2);
+      |          ~     ^
+      |                )
+type2.h:7:5: error: ‘type1’ does not name a type; did you mean ‘type2’?
+    7 |     type1& var1;
+      |     ^~~~~
+      |     type2
+type2.h:11:16: error: expected ‘)’ before ‘&’ token
+   11 |     type2(type1& var1, type3& var3);
+      |          ~     ^
+      |                )
+In file included from type1.h:3,
+                 from type2.h:2,
+                 from type2.cpp:1:
+type3.h:7:5: error: ‘type1’ does not name a type; did you mean ‘type3’?
+    7 |     type1& var1;
+      |     ^~~~~
+      |     type3
+type3.h:8:5: error: ‘type2’ does not name a type; did you mean ‘type3’?
+    8 |     type2& var2;
+      |     ^~~~~
+      |     type3
+type3.h:11:16: error: expected ‘)’ before ‘&’ token
+   11 |     type3(type1& var1, type2& var2);
+      |          ~     ^
+      |                )
+type1.h:8:5: error: ‘type2’ does not name a type; did you mean ‘type1’?
+    8 |     type2& var2;
+      |     ^~~~~
+      |     type1
+type1.h:11:16: error: expected ‘)’ before ‘&’ token
+   11 |     type1(type2& var2, type3& var3);
+      |          ~     ^
+      |                )
+In file included from type1.h:2,
+                 from type3.h:2,
+                 from type3.cpp:1:
+type2.h:7:5: error: ‘type1’ does not name a type; did you mean ‘type2’?
+    7 |     type1& var1;
+      |     ^~~~~
+      |     type2
+type2.h:9:5: error: ‘type3’ does not name a type; did you mean ‘type2’?
+    9 |     type3& var3;
+      |     ^~~~~
+      |     type2
+type2.h:11:16: error: expected ‘)’ before ‘&’ token
+   11 |     type2(type1& var1, type3& var3);
+      |          ~     ^
+      |                )
+type1.h:9:5: error: ‘type3’ does not name a type; did you mean ‘type1’?
+    9 |     type3& var3;
+      |     ^~~~~
+      |     type1
+type1.h:11:24: error: ‘type3’ has not been declared
+   11 |     type1(type2& var2, type3& var3);
+      |                        ^~~~~
+In file included from type2.h:3,
+                 from type1.h:2,
+                 from main.cpp:1:
+type3.h:7:5: error: ‘type1’ does not name a type; did you mean ‘type3’?
+    7 |     type1& var1;
+      |     ^~~~~
+      |     type3
+type3.h:8:5: error: ‘type2’ does not name a type; did you mean ‘type3’?
+    8 |     type2& var2;
+      |     ^~~~~
+      |     type3
+type3.h:11:16: error: expected ‘)’ before ‘&’ token
+   11 |     type3(type1& var1, type2& var2);
+      |          ~     ^
+      |                )
+type2.h:7:5: error: ‘type1’ does not name a type; did you mean ‘type2’?
+    7 |     type1& var1;
+      |     ^~~~~
+      |     type2
+type2.h:11:16: error: expected ‘)’ before ‘&’ token
+   11 |     type2(type1& var1, type3& var3);
+      |          ~     ^
+      |                )
